@@ -6,15 +6,18 @@
 
 int main(int argc, char *argv[])
 {
+	// Проверка аргументов
 	if (argc != 2)
 	{
-		printf("Usage: %s string_to_revert\n", argv[0]);
+		printf("Usage: %s string_to_revert\n", argv[0]); //Если аргументов не 2 (программа + строка), выводится сообщение об использовании
 		return -1;
 	}
+	// Выделение памяти
+	char *reverted_str = malloc(sizeof(char) * (strlen(argv[1]) + 1)); // Выделяется память для копии строки (+1 для нулевого терминатора)
+	// Копирование строки
+	strcpy(reverted_str, argv[1]); // Создается копия оригинальной строки для работы
 
-	char *reverted_str = malloc(sizeof(char) * (strlen(argv[1]) + 1));
-	strcpy(reverted_str, argv[1]);
-
+	//  Вызов функции переворота
 	RevertString(reverted_str);
 
 	printf("Reverted: %s\n", reverted_str);
