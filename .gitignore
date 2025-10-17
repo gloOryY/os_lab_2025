@@ -1,0 +1,41 @@
+# Бинарные файлы
+*.o
+*.exe
+*.out
+*.bin
+
+# Исполняемые файлы
+parallel_min_max
+process_memory
+psum
+zombie_demo
+
+# Временные файлы
+*.tmp
+*.swp
+*~
+.*.swp
+.*.swo
+
+# Файлы результатов
+min_*.txt
+max_*.txt
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Файлы сборки
+*.a
+*.so
+*.dll
+*.dylib
+
+# Отладочная информация
+*.dSYM/
+debug/
+release/
+
+# Резервные копии
+*.bak
+*.backup
